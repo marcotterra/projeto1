@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link rel="stylesheet" href="./static/milligram.css">
+</head>
+
+<body>
+    <main class="wrapper">
+
+        <section class="container">
+
+            <h1 class="text-center">
+                Calculadora Pedido de Camisetas
+            </h1>
+
+            <div class="box">
+                <form id="form1">
+                    <fieldset>
+                        <input type="hidden" id="inputid">
+
+                        <label for="inputp">Quantidade P</label>
+                        <input id="inputp" type="text" placeholder="qtd p" autocomplete="off">
+
+                        <label for="inputm">Quantidade M</label>
+                        <input id="inputm" type="text" placeholder="qtd m" autocomplete="off">
+
+                        <label for="inputg">Quantidade G</label>
+                        <input id="inputg" type="text" placeholder="qtd g" autocomplete="off">
+
+                        <p class="text-center">
+                            <button type="submit" class="button-primary">Salvar</button>
+
+                        </p>
+                    </fieldset>
+                </form>
+                <p id="errors" class="text-center">
+
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3 class="text-center">
+                Relação
+            </h3>
+            <div class="box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cod.</th>
+                            <th>P</th>
+                            <th>M</th>
+                            <th>G</th>
+                            <th>Total</th>
+                            <th>Opção</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-table">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <section class="container foot">
+            <p>proj01.tads2018a - Marco Túlio Terra</p>
+        </section>
+    </footer>
+    <script src="./bundle.js"></script>
+</body>
+
+</html>
